@@ -1,0 +1,71 @@
+.brand-section {
+  width: 100%;
+  background: #f2ede4; 
+  padding: 32px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.brand-text {
+  width: 20%;
+  padding-left: 5%;
+}
+
+.brand-text h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.4;
+}
+
+.brand-marquee {
+  width: 75%;
+  overflow: hidden;
+}
+
+.brand-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: brandScroll 18s linear infinite;
+}
+
+.brand-name {
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+@keyframes brandScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 900px) {
+  .brand-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .brand-text,
+  .brand-marquee {
+    width: 90%;
+    padding-left: 0;
+  }
+
+  .brand-name {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,169 @@
+.footer {
+  background: #f4efe7;
+  padding: 120px 6% 100px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 100px;
+  font-family: "Inter", sans-serif;
+  align-items: start;
+}
+
+.footer-left {
+  padding-right: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.logo-icon {
+  width: 34px;
+  height: 34px;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer-title {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  max-width: 520px;
+}
+
+.footer-title em {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+.footer-desc {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 460px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-socials a {
+  width: 44px;
+  height: 44px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #777;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  padding-top: 10px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.footer-col a {
+  display: block;
+  color: #666;
+  text-decoration: none;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.footer-col a:hover {
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+
+  .footer-title {
+    font-size: 44px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 80px 6% 70px;
+  }
+
+  .footer-title {
+    font-size: 34px;
+  }
+
+  .footer-desc {
+    font-size: 16px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-socials {
+    margin-bottom: 40px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 420px) {
+  .footer {
+    padding: 60px 6% 60px;
+  }
+
+  .footer-title {
+    font-size: 28px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .footer-col h4 {
+    font-size: 16px;
+  }
+
+  .footer-col a {
+    font-size: 15px;
+  }
+   .footer-links {
+    grid-template-columns: 1fr;
+  }
+}

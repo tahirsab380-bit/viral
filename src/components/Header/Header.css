@@ -1,0 +1,176 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: #f2ede4;
+  min-height: 89vh;
+  margin-top: 70px;
+}
+
+.header-left {
+  max-width: 560px; 
+}
+
+.icons-marquee {
+  width: 260px;           
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.icons-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: marquee 14s linear infinite;
+}
+
+.icon {
+  font-size: 16px;        
+  color: #111;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #000;
+}
+
+.content h1 {
+  font-size: 92px;        
+  line-height: 1;
+  margin-bottom: 28px;
+  font-family: "Times New Roman", serif;
+}
+
+.content p {
+  font-size: 20px;       
+  max-width: 480px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header-right {
+  position: relative;
+}
+
+.header-right video {
+  width: 440px;           
+  height: 440px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.buy-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  padding: 12px 22px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.buy-btn:hover {
+  transform: scale(1.08);
+  background: #111;
+}
+.contact-btn {
+  margin-top: 32px;
+  padding: 16px 36px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .icons-marquee {
+    margin: 0 auto 24px;
+  }
+
+  .content h1 {
+    font-size: 60px;      
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+
+  .header-right video {
+    width: 100%;
+    height: auto;
+  }
+    .contact-btn {
+    margin: 28px auto 0;
+  }
+
+}
+.brand-section {
+  width: 90%;
+  margin: 0 auto 60px;
+  overflow: hidden;
+  padding: 24px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.brand-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: brandScroll 18s linear infinite;
+}
+
+.brand-name {
+  font-size: 42px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+@keyframes brandScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 26px;
+  }
+}
