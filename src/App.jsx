@@ -1,7 +1,6 @@
-import { useState } from 'react'
 
 import './App.css'
-import Navbar from './components/navbar/navbar'
+import Navbar from './components/Navbar/Navbar'
 import CustomCursor from './components/CustomCursor'
 import Header from './components/Header/Header'
 import BrandMarquee from "./components/BrandMarquee";
